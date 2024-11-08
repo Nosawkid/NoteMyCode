@@ -1,0 +1,19 @@
+{
+  "name": "notemycode",
+  "version": "1.0.0",
+  "description": "A simple web app to keep track of coding journey",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "author": "Yaseen Sidhik",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-async-errors": "^3.1.1",
+    "mongoose": "^8.8.1"
+  }
+}
