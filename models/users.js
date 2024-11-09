@@ -16,7 +16,7 @@ const userSchema = new Schema({
     type: String,
     required: [true, "Password Cannot be blank"],
   },
-  journal: [
+  journals: [
     {
       type: Schema.Types.ObjectId,
       ref: "Journal",
