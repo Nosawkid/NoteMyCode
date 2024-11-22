@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "build:ui": "rm -rf dist && cd ../FrontEnd/NoteMyCode && npm run build && cp -r dist ../../Backend",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "Yaseen Sidhik",
   "license": "ISC",

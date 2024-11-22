@@ -32,6 +32,11 @@ const journalSchema = new Schema({
       },
     },
   ],
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+    required: [true, "User Id cannot be blank"],
+  },
   createdAt: {
     type: Date,
     default: Date.now,

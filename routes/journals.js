@@ -1,5 +1,4 @@
 const journalRoute = require("express").Router();
-const Journal = require("../models/journal");
 const journalControllers = require("../controllers/journals");
 
 // Get All Journals
@@ -7,6 +6,9 @@ journalRoute.get("/", journalControllers.getAllJournals);
 
 // Get a journal by id
 journalRoute.get("/:id", journalControllers.getJournalById);
+
+// Get All Journals of user
+journalRoute.get("/:userId/user", journalControllers.getJournalsOfAUser);
 
 // Add new journal
 journalRoute.post("/", journalControllers.addNewJournal);

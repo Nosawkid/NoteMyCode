@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Main shape - abstract notepad/screen -->
+  <path d="M50,40 
+           L150,40 
+           C155,40 160,45 160,50
+           L160,150
+           C160,155 155,160 150,160
+           L50,160
+           C45,160 40,155 40,150
+           L40,50
+           C40,45 45,40 50,40
+           Z" 
+        fill="#2563EB"/>
+  
+  <!-- Gradient overlay -->
+  <path d="M50,40 
+           L150,40 
+           C155,40 160,45 160,50
+           L160,150
+           C160,155 155,160 150,160
+           L50,160
+           C45,160 40,155 40,150
+           L40,50
+           C40,45 45,40 50,40
+           Z" 
+        fill="url(#gradient)"/>
+  
+  <!-- Definitions for gradients and filters -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glass effect highlights -->
+    <linearGradient id="highlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Abstract code bracket left -->
+  <path d="M70,80 L85,100 L70,120" 
+        stroke="#FFFFFF" 
+        stroke-width="4" 
+        stroke-linecap="round"
+        fill="none"
+        opacity="0.9"/>
+  
+  <!-- Abstract code bracket right -->
+  <path d="M130,80 L115,100 L130,120" 
+        stroke="#FFFFFF" 
+        stroke-width="4"
+        stroke-linecap="round" 
+        fill="none"
+        opacity="0.9"/>
+  
+  <!-- Minimal pen tip suggesting note-taking -->
+  <path d="M90,90 L110,90 L100,105 Z" 
+        fill="#FFFFFF" 
+        opacity="0.9"/>
+  
+  <!-- Glass effect overlay -->
+  <path d="M50,40 
+           L150,40 
+           C155,40 160,45 160,50
+           L160,150" 
+        stroke="url(#highlight)" 
+        stroke-width="2"
+        fill="none"/>
+        
+  <!-- Title text with modern styling -->
+  <text x="100" y="145" 
+        font-family="sans-serif" 
+        font-size="16" 
+        font-weight="bold" 
+        fill="#FFFFFF" 
+        text-anchor="middle" 
+        letter-spacing="1">
+    NoteMyCode
+  </text>
+  
+  <!-- Subtle text shadow for depth -->
+  <text x="100" y="145" 
+        font-family="sans-serif" 
+        font-size="16" 
+        font-weight="bold" 
+        fill="#000000" 
+        text-anchor="middle" 
+        letter-spacing="1"
+        opacity="0.1"
+        transform="translate(1,1)">
+    NoteMyCode
+  </text>
+</svg>

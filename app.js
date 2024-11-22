@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const connectDB = require("./utils/connectDB");
 const middlewares = require("./utils/middleware");
-
+app.use(express.static("dist"));
 // Routes
 const journalRoute = require("./routes/journals");
 const userRoute = require("./routes/users");
